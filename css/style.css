@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(160, 154, 154);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact {
+    display: flex;
+    gap: 20px;
+}
+
+.contact div {
+    width: 90px;
+    height: 90px;
+    background: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 3px 3px 10px;
+}
+
+
+/* Facebook style start */
+
+
+.facebook {
+    position: relative;
+    overflow: hidden;
+}
+
+.facebook .facebook_bg {
+    position: absolute;
+    z-index: 1;
+    left: -150px;
+    bottom: -150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    background-color: #1e0783;
+    
+}
+
+.facebook:hover .facebook_bg{
+    transition: 0.5s;
+    left: -5px;
+    bottom: -5px;
+    background-color: #1e0783;
+}
+
+.facebook .facebook_bg_2 {
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    background-color: #1e0783;
+    border-radius: 0;
+    transform: rotate(45deg);
+    top: -150px;
+    right: -150px;
+    transition: 0.5s;
+    box-shadow: none;
+}
+
+.facebook:hover .facebook_bg_2 {
+    top: 10px;
+    right: 10px;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+}
+
+.facebook #facebook_1 {
+    position: absolute;
+    transition: 0.5s;
+    z-index: 3;
+    font-size: 50px;
+    color: #1e0783;
+}
+
+.facebook:hover #facebook_1 {
+    font-size: 0px;
+    transition: 0.7s;
+}
+
+#facebook_2 {
+    position: absolute;
+    z-index: 4;
+    font-size: 0px;
+    color: white;
+    transition: 0.5s;
+}
+
+.facebook:hover #facebook_2 {
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+/* Facebook style end */
+
+
+
+
+/* Twitter style start */
+.twitter {
+    position: relative;
+    overflow: hidden;
+}
+
+.twitter .twitter_bg {
+    position: absolute;
+    z-index: 1;
+    left: -150px;
+    bottom: -150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+}
+
+.twitter:hover .twitter_bg {
+    transition: 0.5s;
+    left: -5px;
+    bottom: -5px;
+    background-color: #0f869b;
+}
+
+.twitter .twitter_bg_2 {
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    top: -150px;
+    right: -150px;
+    transition: 0.5s;
+    box-shadow: none;
+    background-color: #0f869b;
+}
+
+.twitter:hover .twitter_bg_2 {
+    top: 10px;
+    right: 10px;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+}
+
+.twitter #twitter_1 {
+    position: absolute;
+    transition: 0.5s;
+    z-index: 3;
+    font-size: 40px;
+    color: #0f869b;
+}
+
+.twitter:hover #twitter_1 {
+    font-size: 0px;
+    transition: 0.7s;
+}
+
+#twitter_2 {
+    position: absolute;
+    z-index: 4;
+    font-size: 0px;
+    color: white;
+    transition: 0.5s;
+}
+
+.twitter:hover #twitter_2 {
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+
+/* Twitter style end */
+
+
+
+
+/* Google style start */
+
+.google {
+    position: relative;
+    overflow: hidden;
+}
+
+.google .google_bg {
+    position: absolute;
+    z-index: 1;
+    left: -150px;
+    bottom: -150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+}
+
+.google:hover .google_bg {
+    transition: 0.5s;
+    left: -5px;
+    bottom: -5px;
+    background-color: #b71c1c;
+}
+
+.google .google_bg_2 {
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    top: -150px;
+    right: -150px;
+    transition: 0.5s;
+    box-shadow: none;
+    background-color: #b71c1c;
+}
+
+.google:hover .google_bg_2 {
+    top: 10px;
+    right: 10px;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+}
+
+.google #google_1 {
+    position: absolute;
+    transition: 0.5s;
+    z-index: 3;
+    font-size: 40px;
+    color: #b71c1c;
+}
+
+.google:hover #google_1 {
+    font-size: 0px;
+    transition: 0.7s;
+}
+
+#google_2 {
+    position: absolute;
+    z-index: 4;
+    font-size: 0px;
+    color: white;
+    transition: 0.5s;
+}
+
+.google:hover #google_2 {
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+
+/* Google style end */
+
+
+
+
+/* Internet style start */
+
+.internet {
+    position: relative;
+    overflow: hidden;
+}
+
+.internet .internet_bg {
+    position: absolute;
+    z-index: 1;
+    left: -150px;
+    bottom: -150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    background-color: #f44336;
+}
+
+.internet:hover .internet_bg {
+    transition: 0.5s;
+    left: -5px;
+    bottom: -5px;
+}
+
+.internet .internet_bg_2 {
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    top: -150px;
+    right: -150px;
+    transition: 0.5s;
+    box-shadow: none;
+    background-color: #f44336;
+}
+
+.internet:hover .internet_bg_2 {
+    top: 10px;
+    right: 10px;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+}
+
+.internet #internet_1 {
+    position: absolute;
+    transition: 0.5s;
+    z-index: 3;
+    font-size: 40px;
+    color: #f44336;
+}
+
+.internet:hover #internet_1 {
+    font-size: 0px;
+    transition: 0.7s;
+}
+
+#internet_2 {
+    position: absolute;
+    z-index: 4;
+    font-size: 0px;
+    color: white;
+    transition: 0.5s;
+}
+
+.internet:hover #internet_2{
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+/* Internet style end */
+
+
+
+
+/* Skype style start */
+
+.skype {
+    position: relative;
+    overflow: hidden;
+}
+
+.skype .skype_bg {
+    position: absolute;
+    z-index: 1;
+    left: -150px;
+    bottom: -150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    background-color: #1976d2;
+}
+
+.skype:hover .skype_bg {
+    transition: 0.5s;
+    left: -5px;
+    bottom: -5px;
+}
+
+.skype .skype_bg_2 {
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    border-radius: 0;
+    transform: rotate(45deg);
+    top: -150px;
+    right: -150px;
+    transition: 0.5s;
+    box-shadow: none;
+    background-color: #1976d2;
+}
+
+.skype:hover .skype_bg_2 {
+    top: 10px;
+    right: 10px;
+    transition-delay: 0.3s;
+    transition-duration: 0.5s;
+}
+
+.skype #skype_1 {
+    position: absolute;
+    transition: 0.5s;
+    z-index: 3;
+    font-size: 45px;
+    color: #1976d2;
+}
+
+.skype:hover #skype_1{
+    font-size: 0px;
+    transition: 0.7s;
+}
+
+#skype_2 {
+    position: absolute;
+    z-index: 4;
+    font-size: 0px;
+    color: white;
+    transition: 0.5s;
+}
+
+.skype:hover #skype_2 {
+    font-size: 45px;
+    transition: 0.5s;
+}
+
+/* Skype style end */
